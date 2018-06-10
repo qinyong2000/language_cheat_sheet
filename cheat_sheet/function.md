@@ -1,8 +1,7 @@
 ## C
 ```C
-double power(double x, int n) {
-    ...
-    return x;
+double add(double x, double y) {
+    return x + y;
 }
 
 void print() {
@@ -33,7 +32,40 @@ TODO
 ``` 
 ## Go
 ```golang
-TODO
+// function
+func print() {
+    fmt.Println("Hello World")
+}
+
+func print(msg string) {
+    fmt.Println(msg)
+}
+
+func getMessage(name string) string {
+    return "hello " + name
+}
+
+// name return value
+func getMessage(name string)(msg string) {
+    msg = "hello " + name
+    return
+}
+
+// return 2 values
+func getMessage(name string)(string, string) {
+    return name, "hello " + name
+}
+
+// closure
+f := func(a int, b int) (int, int) {
+    return b, a
+}
+fmt.Println(f(1, 2))
+
+func(msg string) {
+    fmt.Println(msg)
+}("hello")
+
 ```
 
 ## Perl

@@ -26,7 +26,24 @@ TODO
 ``` 
 ## Go
 ```golang
-TODO
+package foo
+
+var C int         // export
+func Print() {    // export
+    
+}
+
+import "foo"
+foo.C
+foo.Print()
+
+import f "foo"    // alias
+f.C
+f.Print()
+
+import . "foo"     
+C 
+Print()
 ```
 
 ## Perl

@@ -48,7 +48,44 @@ TODO
 ``` 
 ## Go
 ```golang
-TODO
+// define struct
+type user struct {
+    name string
+    score int
+}
+// struct tag
+type user struct {
+    name string `elem:"Name"`
+    score int   `elem:"Score"`
+}
+reflect.TypeOf(user).Field(0).Tag.Get("elem")   // Name
+// struct method
+func (u user)show() {
+    fmt.Println("name: %s, score: %d\n", u.name, u.score)
+}
+func (u *user)hit() {
+    u.score++
+}
+
+// init
+u := user{name: "hello", score: 1}
+u.hit()
+u.show()
+
+var u *user = new(user)
+u.name = "hello"
+u.score = 1
+
+// interface
+type User interface {
+    show()
+    hit()
+}
+var u User
+u = &user{name: "hello", score: 1}   // struct user have mrthod show() and hit()
+u.hit()
+u.show()
+
 ```
 
 ## Perl

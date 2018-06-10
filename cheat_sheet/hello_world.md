@@ -31,6 +31,7 @@ int main() {
     return 0;
 }
 ```
+
 ## Java
 HelloWorld.java
 ```Java
@@ -74,6 +75,14 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
+```
+Build & Run
+```
+>go build hello.go
+>./hello
+Hello, World!
+>go run hello.go
+Hello, World!
 ```
 
 ## Perl

@@ -26,26 +26,7 @@ TODO
 ``` 
 ## Go
 ```golang
-// define
-var m map[string]int
-// init
-m := map[string]int {
-    "a": 1,
-    "b": 2,     // need comma!
-}
-// create
-m := make(map[string]int)
-// get
-v = m["a"]    // 1
-v = m["c"]    // 0 if not exists
-v, ok := m["c"] // ok == true if exists
-len(m)          // 2
-
-// replace
-m["a"] = 2 
-// remove
-delete(m, "a")  // delete a entry
-
+TODO
 ```
 
 ## Perl

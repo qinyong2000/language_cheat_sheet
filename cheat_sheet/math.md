@@ -26,7 +26,25 @@ TODO
 ``` 
 ## Go
 ```golang
-TODO
+import "math"
+
+f := 1.2
+math.Ceil(f)
+math.Trunc(f)
+math.Floor(f)
+
+math.Sin(math.Pi / 2)
+math.Cos(0)
+math.Tan(0)
+math.Log(math.E)
+math.Log10(10)
+math.Sqrt(100)
+
+import "math/rand"
+
+rand.Seed(time.Now().UnixNano())
+rand.Float32()
+rand.Intn(100)
 ```
 
 ## Perl

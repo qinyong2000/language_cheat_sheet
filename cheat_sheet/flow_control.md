@@ -117,7 +117,40 @@ TODO
 ```
 ## Python
 ```Python
-TODO
+# if
+if x < 0:
+elif x == 0:
+    print "Zero"
+else:
+    print "more"
+
+# for
+words = ['cat', 'dog', 'bird']
+for w in words:
+    print w, len(w)
+
+for i in range(10):
+    print i
+
+# break, continue
+for n in range(2, 10):
+    for x in range(2, n):
+        if n%x == 0:
+            break
+        else:
+            continue
+    else:               # for ... else, x > n
+        print n, 'is a prime number'
+
+# while
+while b < 10:
+    print b
+
+# pass
+while True:
+    pass
+
+# there is no switch statment in Python!
 ```
 ## PHP
 ```PHP

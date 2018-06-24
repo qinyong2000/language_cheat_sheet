@@ -98,7 +98,27 @@ TODO
 ```
 ## Python
 ```Python
-TODO
+# define
+class Dog:
+    kind = 'canine'
+    
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []
+    
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+
+# use
+d = Dog('Buddy')
+d.kind
+d.name
+d.add_trick('roll over')
+
+# extend
+class DerivedClassName(Base1, Base2, Base3):
+
+
 ```
 ## PHP
 ```PHP

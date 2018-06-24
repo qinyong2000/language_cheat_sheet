@@ -100,6 +100,8 @@ fmt.Println(reflect.Typeof("a"))    // string
 
 // type cast
 x := uint8(10)
+var x interface{} = 1
+y := x.(float64)
 ```
 
 ## Perl
@@ -112,7 +114,14 @@ TODO
 ```
 ## Python
 ```Python
-TODO
+a = 1
+b = 0.0
+s = 'abc'
+a, b = 0, 1
+a = None
+a = True            # True, False
+b = a and False     # or, and, not
+
 ```
 ## PHP
 ```PHP

@@ -55,7 +55,35 @@ TODO
 ```
 ## Python
 ```Python
-TODO
+import re
+# match
+regex = r'ab+'
+text = "abbabbabaaabb"
+pattern = re.compile(regx)
+match = pattern.match(text)
+match = re.match(regex, text)
+
+# replace
+s = "aaabbbccc"
+s.replace("b", "B")         # aaaBBBccc
+s.replace("b", "B", 1)      # aaaBbbccc
+re.sub(r'[a-z]+', "0", "abc123")  # 0123
+
+# find
+text = "dog fox"
+index = text.find("fox")
+if index != -1:
+    print "found at", index
+
+match = re.search(r'[a-z]+', "012abc")
+if match:
+    print match.group()
+    print match.start()
+    print match.end()
+    print match.span()
+
+re.findall(r'[a-z]+', "012abc") # ['abc']
+
 ```
 ## PHP
 ```PHP

@@ -85,7 +85,29 @@ TODO
 ```
 ## Python
 ```Python
-TODO
+import threading
+
+def compute():
+    x = 0
+    while x < 100:
+        x += 1
+
+t1 = threading.Thread(target=compute)
+t2 = threading.Thread(target=compute)
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+
+import multiprocessing
+
+p1 = multiprocessing.Process(target=compute)
+p2 = multiprocessing.Process(target=compute)
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+    
 ```
 ## PHP
 ```PHP

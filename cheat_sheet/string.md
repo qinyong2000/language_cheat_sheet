@@ -49,26 +49,6 @@ TODO
 ``` 
 ## Go
 ```golang
-// define
-var p [2]int
-var p []int = []int{1, 2, 3, 4}
-
-// slice
-a[lo: hi]   // lo <= index < hi
-a[2:]       // index 1 to tail
-a[:2]       // index 0 to 1
-a[:]        // all
-
-s := a[0:2] // elements of a index 0 to 1
-
-// function
-len(p)      // lengh of array
-cap(p)      // capacity of array
-a = append(a, 5)            // extend capacity
-s := make([]int, 5)         // len=5 capacity=5
-s := make([]int, 5, 100])   // len=5 capacity=100
-
-// string function
 // concat
 a := "Hello"
 b := a + " World"
@@ -107,6 +87,12 @@ s := "日本語"
 len(s)          // 9
 len([]rune(s))  // 3
 
+// convert
+import "strconv"
+i, _ := strconv.ParseInt("10000", 2, 0)
+
+s := fmt.Sprintf("%d", 100)
+
 ```
 
 ## Perl
@@ -119,7 +105,45 @@ TODO
 ```
 ## Python
 ```Python
-TODO
+'eggs'
+"yes"
+'doesn\'t'
+"doesn't"
+
+3 * 'un' + 'ium'    # 'unununium'
+'Py' 'thon'         # 'Python'
+'Py' + 'thon'       # 'Python'
+
+# here doc
+print """\
+Usage: thingy [OPTIONS]
+    -h                        Display this usage message
+    -H hostname               Hostname to connect to
+"""
+word = 'Python'
+word[0]             # 'P'
+word[-1]            # 'n'
+word[0:2]           # 'Py'
+word[:2]
+word[4:]
+word[-2:]
+
+len(word)           # length of string
+
+ "The sum of 1 + 2 is {0}".format(1+2)
+
+ # convert
+ str(3.14)
+int('100')
+int('101', 2)   # 5
+int('0b101', 0) # 5
+int('0o70', 0)  # 56
+int('0xFF', 0)  # 255
+
+float('3.14')
+
+
+
 ```
 ## PHP
 ```PHP

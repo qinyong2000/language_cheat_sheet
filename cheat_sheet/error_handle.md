@@ -74,6 +74,21 @@ func f() {
 ```
 ## Python
 ```Python
+# catch error
+try:
+    f = open(arg, 'r')
+except IOError as e:
+    print 'cannot open', arg
+except(RuntimeError, TypeError):
+    raise
+else:
+    f.close()
+finally:
+    print 'finally'
+
+# raise error
+raise MyError()
+
 ```
 ## PHP
 ```PHP

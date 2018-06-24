@@ -57,7 +57,22 @@ TODO
 ```
 ## Python
 ```Python
-TODO
+import math
+
+math.pi     # 3.14...
+math.degrees(math.pi)   # 180
+math.radians(180)       # 3.14..
+math.sin(math.pi / 2)
+math.cos(0)
+math.tan(0)
+
+math.e      # 2.718...
+math.pow(2, 4)   # 16
+math.sqrt(100)
+math.exp(2) # 7.389...
+math.log(10)
+math.log10(10)
+math.log2(1)
 ```
 ## PHP
 ```PHP

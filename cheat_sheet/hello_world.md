@@ -21,6 +21,12 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+## Swift
+HelloWorld.swift
+```Swift
+println("Hello, World!")
+```
+
 ## C++
 hello.cpp
 ```C++
@@ -43,6 +49,15 @@ public class HelloWorld {
     }
 }
 ```
+
+## Kotlin
+HelloWorld.kt
+```Kotlin
+fun main(args:Array<String>) {
+    println("Hello, World!")
+}
+```
+
 ## C#
 HelloWorld.cs
 ```C#
